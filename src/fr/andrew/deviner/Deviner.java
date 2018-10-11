@@ -3,17 +3,13 @@ package fr.andrew.deviner;
 public class Deviner {
 	
 	private boolean faux = false;
-	public int nbAleatoire = (int) (Math.random() * ( 0 + 100 )) ;	
-	public int nombreUtilisateur;
-	public boolean supinf100 = false;
+	protected int nbAleatoire = (int) (Math.random() * ( 0 + 100 )) ;	
+	protected boolean supinf100 = false;
 	private int chanceUtiliser = 1;
+	
 	
 	public Deviner() {
 		super();
-	}
-	
-	public Deviner(int nombreUtilisateur) {
-		this.nombreUtilisateur = nombreUtilisateur;
 	}
 	
 	public void verificationNombreUtilisateur(int nombreUtilisateur) {
@@ -31,12 +27,20 @@ public class Deviner {
 			}
 	}
 	
+	public void verificationSupInf100(int nombreUtilisateur){
+		if(nombreUtilisateur < 0 || nombreUtilisateur > 100) {
+			System.out.println("Entrez une valeur entre 0 et 100");
+			supinf100=true;		
+		}else {
+			supinf100=false;
+		}
+	}
 	
 	public boolean verificationFalse() {				
 		return faux;
 	}
 	
-	public boolean verificationsupinf100() {
+	public boolean verificationSupInf100False() {
 		return supinf100;
 	}
 	
@@ -48,14 +52,6 @@ public class Deviner {
 
 	public void setNbAleatoire(int nbAleatoire) {
 		this.nbAleatoire = nbAleatoire;
-	}
-
-	public int getNombreUtilisateur() {
-		return nombreUtilisateur;
-	}
-
-	public void setNombreUtilisateur(int nombreUtilisateur) {
-		this.nombreUtilisateur = nombreUtilisateur;
 	}
 
 	public boolean isSupinf100() {
