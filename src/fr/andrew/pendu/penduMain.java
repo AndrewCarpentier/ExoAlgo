@@ -63,12 +63,96 @@ public class penduMain {
 					System.out.println(erreur);
 					System.out.println("----Lettre Trouver----");
 					System.out.println(lettreUtiliser);
-					System.out.println("\n\n\n\n\n\n\n\n");
+					if(erreur == 0){
+						System.out.println("\n\n\n\n\n\n\n\n");
+					}else if(erreur == 1) {
+						System.out.println("\n\n\n\n");
+						System.out.println("___");
+						System.out.println("\n\n");
+					}else if(erreur == 2) {
+						System.out.println();
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 3) {						
+						System.out.println(" _____");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 4) {
+						System.out.println(" _____");
+						System.out.println(" |/ ");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 5) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 6) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |   O");
+						System.out.println(" |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 7) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |   O");
+						System.out.println(" |   |");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 8) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |   O");
+						System.out.println(" |  /|");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if(erreur == 9) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |   O");
+						System.out.println(" |  /|\\");
+						System.out.println(" |");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}else if (erreur == 10) {
+						System.out.println(" _____");
+						System.out.println(" |/  |");
+						System.out.println(" |   O");
+						System.out.println(" |  /|\\");
+						System.out.println(" |  /");
+						System.out.println("_|_");
+						System.out.println("\n\n");
+					}
 				}					
 			}
 		}else {
 			System.out.println("Vous avez perdu");
-			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+			System.out.println(" _____");
+			System.out.println(" |/  |");
+			System.out.println(" |   O");
+			System.out.println(" |  /|\\");
+			System.out.println(" |  / \\");
+			System.out.println("_|_");
+			System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n");
 			break;
 		}
 		
