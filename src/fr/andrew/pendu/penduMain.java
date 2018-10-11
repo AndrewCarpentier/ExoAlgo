@@ -43,7 +43,7 @@ public class penduMain {
 					if(lettre.toLowerCase().charAt(0) == mot.charAt(i)) {
 						lettreTrouver++;
 						x++;
-						tableau[i] = lettre.toLowerCase().charAt(0);						
+						tableau[i] = lettre.toUpperCase().charAt(0);						
 					}
 					
 				}
