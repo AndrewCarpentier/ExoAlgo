@@ -8,17 +8,20 @@ public class penduMain {
 	
 		Scanner sc = new Scanner(System.in);
 		
-		String mot = "bonjour";
+		String mot ;
 		int lettreTrouver = 0;
 		boolean lettreDejaUtiliser = false;
 		int erreur = 0;
 		int x = 0;
+		
+		System.out.println("entrez votre mot");
+		mot = sc.next().toLowerCase();
+		
 		char [] tableau = new char[mot.length()];
 		char [] alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
 		char [] lettreUtiliser = new char [alphabet.length];
 		
-		System.out.println("entrez votre mot");
-		mot = sc.next().toLowerCase();
+		
 		System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
 	do {
 		if(erreur < 11) {
