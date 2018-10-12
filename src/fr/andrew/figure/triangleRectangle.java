@@ -1,4 +1,4 @@
-package fr.andrew.triangle;
+package fr.andrew.figure;
 
 import java.util.Scanner;
 
